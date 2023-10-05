@@ -1385,7 +1385,7 @@ blockquote {
     position: relative;
     text-transform: uppercase;
     font-weight: bold;
-    color: #fff;
+    color: #f3;
 }
 
 #clients img {
@@ -1394,7 +1394,7 @@ blockquote {
 }
 
 .client-overlay {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(247, 243, 243, 0.8);
     position: absolute;
     top;
     0;
