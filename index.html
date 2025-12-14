@@ -167,20 +167,6 @@
                 opzioni selezionate.
               </p>
             </div>
-
-            <!--Call to Action-->
-            <a href="https://localhost:5053/app/" class="button">Începe Aici</a>
-            <a
-              href="https://youtu.be/68goF7BRduI"
-              data-videoid="68goF7BRduI"
-              data-videosite="youtube"
-              class="button video link-lightbox"
-              >Cum folosesc aplicația &nbsp;<i
-                class="fa fa-play"
-                aria-hidden="true"
-              ></i
-            ></a>
-            <!--End Call to Action-->
           </div>
         </div>
       </header>
@@ -214,7 +200,8 @@
                 <a
                   href="#contact-form-modal"
                   data-featherlight="#contact-form-modal"
-                  class="button"
+                  class="button order-btn"
+                  data-package="Sito Vetrina Start"
                   >ORDINA OGGI</a
                 >
               </div>
@@ -241,7 +228,8 @@
                 <a
                   href="#contact-form-modal"
                   data-featherlight="#contact-form-modal"
-                  class="button"
+                  class="button order-btn"
+                  data-package="Sito Vetrina Pro"
                   >ORDINA OGGI</a
                 >
               </div>
@@ -265,7 +253,8 @@
                 <a
                   href="#contact-form-modal"
                   data-featherlight="#contact-form-modal"
-                  class="button"
+                  class="button order-btn"
+                  data-package="Brand & Web"
                   >ORDINA OGGI</a
                 >
               </div>
@@ -455,39 +444,6 @@
     <script src="js/images-loaded.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/site.js"></script>
-    <script>
-      $(document).on("submit", "#modal-contact-form", function (e) {
-        e.preventDefault();
-
-        var name = $(this).find('input[name="name"]').val();
-        var email = $(this).find('input[name="email"]').val();
-        var phone = $(this).find('input[name="phone"]').val();
-        var message = $(this).find('textarea[name="message"]').val();
-
-        var whatsappMessage =
-          "Noua solicitare de preventiv pentru site web:\n" +
-          "------------------------------------------\n" +
-          "Nume: " +
-          name +
-          "\n" +
-          "Email: " +
-          email +
-          "\n" +
-          "Telefon: " +
-          (phone || "Nu a fost furnizat") +
-          "\n" +
-          "------------------------------------------\n" +
-          "Mesaj: " +
-          message;
-
-        var encodedMessage = encodeURIComponent(whatsappMessage);
-        var whatsappURL = "https://wa.me/393932124997?text=" + encodedMessage;
-
-        window.open(whatsappURL, "_blank");
-
-        $.featherlight.close();
-        this.reset();
-      });
-    </script>
+    <script src="js/modal-form.js"></script>
   </body>
 </html>
