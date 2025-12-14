@@ -124,7 +124,7 @@ a:hover, #header.nav-solid nav a:hover {
 /* Banner Background and Text Colors */
 
 #banner {
-    background: url("../images/KGUEM0.webp") no-repeat center top;
+    background: url("../images/gallery-images/maarten.jpg") no-repeat center top;
     background-size:cover;
 }
 
@@ -167,14 +167,14 @@ body {
     font-size:62px;
     line-height:60px;
     font-weight:800;
-    color:#111;
+    color:#ffffff;
 }
 
 #banner h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:18px;
     font-weight:300;
-    color:#111;
+    color:#ffffff;
 }
 
 
