@@ -337,7 +337,7 @@
 <script>
     $(document).ready(function() {
         $('#modal-contact-form').on('submit', function(e) {
-            e.preventDefault(); // Previne trimiterea formularului în mod standard
+            e.preventDefault(); 
 
             // 1. Colectează datele din formular
             var name = $('input[name="name"]').val();
@@ -345,19 +345,22 @@
             var phone = $('input[name="phone"]').val();
             var message = $('textarea[name="message"]').val();
 
-            // 2. Creează mesajul pre-completat (în italiană, ideal pentru clienții IT)
+            // 2. Creează mesajul pre-completat (folosind doar \n pentru newline)
             var whatsappMessage = 
-                "*Nuova Richiesta Preventivo - Sito Web:*\n\n" +
-                "Nome: " + name + "\n" +
+                "Noua solicitare de preventiv pentru site web:\n" +
+                "------------------------------------------\n" +
+                "Nume: " + name + "\n" +
                 "Email: " + email + "\n" +
-                "Telefono: " + (phone || "Non fornito") + "\n\n" +
-                "Messaggio:\n" + message;
+                "Telefon: " + (phone || "Nu a fost furnizat") + "\n" +
+                "------------------------------------------\n" +
+                "Mesaj: " + message;
 
-            // 3. Encodează mesajul pentru URL
+
+            // 3. Encodează mesajul pentru URL (este corect, dar îl păstrăm)
             var encodedMessage = encodeURIComponent(whatsappMessage);
 
-            // 4. Numărul tău WhatsApp (INLOCUIEȘTE CU NUMĂRUL TĂU REAL, inclusiv prefixul de țară, ex: 393201234567)
-            var tuoNumeroWhatsapp = "393932124997"; // <-- DE INLOCUIT
+            // 4. Numărul tău WhatsApp (ESTE CORECT)
+            var tuoNumeroWhatsapp = "393932124997"; 
 
             // 5. Construiește URL-ul WhatsApp
             var whatsappURL = "https://wa.me/" + tuoNumeroWhatsapp + "?text=" + encodedMessage;
@@ -365,10 +368,8 @@
             // 6. Deschide link-ul în fereastră nouă
             window.open(whatsappURL, '_blank');
             
-            // Opțional: Închide modalul după ce utilizatorul este redirecționat (dacă folosești featherlight)
+            // Opțional: Închide modalul și resetează
             $.featherlight.close();
-            
-            // Opțional: Resetează formularul
             this.reset();
         });
     });
