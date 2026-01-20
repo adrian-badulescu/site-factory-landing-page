@@ -18,6 +18,6 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: "./home/officil/"
+          local-dir: "./officil/"
           server-dir: "/www/"
 
