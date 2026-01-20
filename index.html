@@ -1,450 +1,381 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8" />
 
-    <title>OfficinaSiti.it</title>
+<head lang="en">
+  <meta charset="UTF-8" />
 
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
+  <title>OfficinaSiti.it</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="images/favicon.ico" title="Favicon" />
 
-    <link rel="stylesheet" href="css/namari-color.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/namari-color.css" />
 
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script type="text/javascript">
-      (function (c, l, a, r, i, t, y) {
-        c[a] =
-          c[a] ||
-          function () {
-            (c[a].q = c[a].q || []).push(arguments);
-          };
-        t = l.createElement(r);
-        t.async = 1;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-      })(window, document, "clarity", "script", "lefht5lihf");
-    </script>
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
 
-    <style>
-      /* Ascunde conținutul modalului în mod normal */
-      .lightbox-content {
-        display: none;
-        max-width: 400px; /* Limitează lățimea modalului */
-        padding: 20px;
-        background: #fff;
-        color: #333;
-        text-align: left;
-      }
-      /* Stiluri de bază pentru formular */
-      #modal-contact-form input[type="text"],
-      #modal-contact-form input[type="email"],
-      #modal-contact-form textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 15px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        box-sizing: border-box;
-        font-size: 14px;
-      }
-      #modal-contact-form textarea {
-        height: 100px;
-        resize: vertical;
-      }
-      #modal-contact-form .button {
-        width: 100%;
-        text-align: center;
-        border: none;
-        cursor: pointer;
-        /* Se bazează pe stilul .button din namari-color.css */
-      }
-      #contact-form-modal h3 {
-        color: #4a4a4a;
-        margin-bottom: 5px;
-      }
-      #contact-form-modal p {
-        color: #888;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="preloader">
-      <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "v4eidetxqy");
+  </script>
+
+  <style>
+    /* Ascunde conținutul modalului în mod normal */
+    .lightbox-content {
+      display: none;
+      max-width: 400px;
+      /* Limitează lățimea modalului */
+      padding: 20px;
+      background: #fff;
+      color: #333;
+      text-align: left;
+    }
+
+    /* Stiluri de bază pentru formular */
+    #modal-contact-form input[type="text"],
+    #modal-contact-form input[type="email"],
+    #modal-contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    #modal-contact-form textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    #modal-contact-form .button {
+      width: 100%;
+      text-align: center;
+      border: none;
+      cursor: pointer;
+      /* Se bazează pe stilul .button din namari-color.css */
+    }
+
+    #contact-form-modal h3 {
+      color: #4a4a4a;
+      margin-bottom: 5px;
+    }
+
+    #contact-form-modal p {
+      color: #888;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown"></div>
+    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight"></div>
+    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp"></div>
+    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft"></div>
+  </div>
+
+  <div id="wrapper">
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+      <div id="header" class="nav-collapse">
+        <div class="row clearfix">
+          <div class="col-1">
+            <div id="logo">
+              <h1>OFFICINASITI.IT</h1>
+            </div>
+            <nav id="nav-main">
+              <ul>
+                <li>
+                  <a href="#about">Visione</a>
+                </li>
+                <li>
+                  <a href="#services">Servizi</a>
+                </li>
+              </ul>
+            </nav>
+            <div id="nav-trigger"><span></span></div>
+            <nav id="nav-mobile"></nav>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-      <div
-        class="top-border wow fadeInDown animated"
-        style="visibility: visible; animation-name: fadeInDown"
-      ></div>
-      <div
-        class="right-border wow fadeInRight animated"
-        style="visibility: visible; animation-name: fadeInRight"
-      ></div>
-      <div
-        class="bottom-border wow fadeInUp animated"
-        style="visibility: visible; animation-name: fadeInUp"
-      ></div>
-      <div
-        class="left-border wow fadeInLeft animated"
-        style="visibility: visible; animation-name: fadeInLeft"
-      ></div>
-    </div>
+      <div id="banner-content" class="row clearfix">
+        <div class="col-38">
+          <div class="section-heading">
+            <h1>
+              Il tuo nuovo sito web, pronto in 72 ore. Semplice e senza
+              stress.
+            </h1>
+            <h2>
+              Ti aiuteremo a raggiungere il tuo obiettivo in 3 semplici fasi:
+            </h2>
+            <p style="color: #ffffff"><b>Fase 1</b></p>
+            <p style="color: #ffffff">
+              Stabiliamo gli obiettivi e ciò che desiderate ottenere dai
+              visitatori, convalidiamo i servizi e i prodotti, prenotiamo il
+              dominio scelto e vi proponiamo 2 modelli di sito.
+            </p>
+            <p style="color: #ffffff"><b>Fase 2</b></p>
+            <p style="color: #ffffff">
+              Pianifichiamo la struttura, lo schema delle pagine, i contenuti
+              da includere nel sito, l'organizzazione della navigazione, le
+              pagine principali e quelle secondarie.
+            </p>
+            <p style="color: #ffffff"><b>Fase 3</b></p>
+            <p style="color: #ffffff">
+              Creiamo i contenuti e i testi, inseriamo le immagini e le
+              funzioni necessarie per rendere il sito facile da leggere e da
+              comprendere per il visitatore. Implementiamo il design e i
+              contenuti nel modello scelto, verifichiamo e testiamo la
+              funzionalità del sito su diversi dispositivi e configuriamo le
+              opzioni selezionate.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <div id="wrapper">
-      <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-          <div class="row clearfix">
-            <div class="col-1">
-              <div id="logo">
-                <h1>OFFICINASITI.IT</h1>
+    <main id="content">
+      <section id="pricing" class="secondary-color text-center scrollto clearfix">
+        <div class="row clearfix">
+          <div class="section-heading">
+            <h3>LA TUA SCELTA</h3>
+            <h2 class="section-title">Abbiamo il pacchetto giusto per te</h2>
+          </div>
+
+          <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="pricing-block-content">
+              <h3>Sito Vetrina Start</h3>
+              <p class="pricing-sub">Pacchetto Base</p>
+              <div class="pricing">
+                <div class="price"><span>&#8364;</span>300</div>
+                <p>Pagina Singola (Scroll)</p>
               </div>
-              <nav id="nav-main">
-                <ul>
-                  <li>
-                    <a href="#about">Visione</a>
-                  </li>
-                  <li>
-                    <a href="#services">Servizi</a>
-                  </li>
-                </ul>
-              </nav>
-              <div id="nav-trigger"><span></span></div>
-              <nav id="nav-mobile"></nav>
+              <ul>
+                <li>Design Moderno</li>
+                <li>Ottimizzazione Mobile (Responsive)</li>
+                <li>Modulo di Contatto</li>
+                <li>Consegna in 48–72h</li>
+                <li>Hosting → 100€/anno</li>
+              </ul>
+              <a href="#contact-form-modal" data-featherlight="#contact-form-modal" class="button order-btn"
+                data-package="Sito Vetrina Start">ORDINA OGGI</a>
+            </div>
+          </div>
+          <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="pricing-block-content">
+              <h3>Sito Vetrina Pro</h3>
+              <p class="pricing-sub">La scelta più popolare</p>
+              <div class="pricing">
+                <div class="price"><span>&#8364;</span>500 -</div>
+                <div class="price"><span>&#8364;</span>700</div>
+                <p>4–6 Pagine</p>
+              </div>
+              <ul>
+                <li>Ottimizzazione Mobile (Responsive)</li>
+                <li>SEO On-Page</li>
+                <li>Configurazione Google Business Profile</li>
+                <li>Ottimizzazione della Velocità</li>
+                <li>Hosting + Manutenzione → 150€/anno</li>
+              </ul>
+              <a href="#contact-form-modal" data-featherlight="#contact-form-modal" class="button order-btn"
+                data-package="Sito Vetrina Pro">ORDINA OGGI</a>
+            </div>
+          </div>
+          <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
+            <div class="pricing-block-content">
+              <h3>Brand & Web</h3>
+              <p class="pricing-sub">Pacchetto Premium</p>
+              <div class="pricing">
+                <div class="price"><span>&#8364;</span>900 -</div>
+                <div class="price"><span>&#8364;</span>1200</div>
+                <p>4–10 Pagine</p>
+              </div>
+              <ul>
+                <li>Design Personalizzato</li>
+                <li>Copywriting Professionale</li>
+                <li>Logo + Identità Visiva</li>
+                <li>Assistenza 30 Giorni</li>
+                <li>Hosting + Manutenzione → 150€/anno</li>
+              </ul>
+              <a href="#contact-form-modal" data-featherlight="#contact-form-modal" class="button order-btn"
+                data-package="Brand & Web">ORDINA OGGI</a>
             </div>
           </div>
         </div>
-        <div id="banner-content" class="row clearfix">
-          <div class="col-38">
+      </section>
+      <section id="about" class="introduction scrollto">
+        <div class="row clearfix">
+          <div class="col-3">
             <div class="section-heading">
-              <h1>
-                Il tuo nuovo sito web, pronto in 72 ore. Semplice e senza
-                stress.
-              </h1>
-              <h2>
-                Ti aiuteremo a raggiungere il tuo obiettivo in 3 semplici fasi:
+              <h3>SINERGIA</h3>
+              <h2 class="section-title">
+                La tua attività merita un sito web che porti risultati
               </h2>
-              <p style="color: #ffffff"><b>Fase 1</b></p>
-              <p style="color: #ffffff">
-                Stabiliamo gli obiettivi e ciò che desiderate ottenere dai
-                visitatori, convalidiamo i servizi e i prodotti, prenotiamo il
-                dominio scelto e vi proponiamo 2 modelli di sito.
-              </p>
-              <p style="color: #ffffff"><b>Fase 2</b></p>
-              <p style="color: #ffffff">
-                Pianifichiamo la struttura, lo schema delle pagine, i contenuti
-                da includere nel sito, l'organizzazione della navigazione, le
-                pagine principali e quelle secondarie.
-              </p>
-              <p style="color: #ffffff"><b>Fase 3</b></p>
-              <p style="color: #ffffff">
-                Creiamo i contenuti e i testi, inseriamo le immagini e le
-                funzioni necessarie per rendere il sito facile da leggere e da
-                comprendere per il visitatore. Implementiamo il design e i
-                contenuti nel modello scelto, verifichiamo e testiamo la
-                funzionalità del sito su diversi dispositivi e configuriamo le
-                opzioni selezionate.
-              </p>
+              <cite class="section-subtitle"><b>"Il cliente è al centro della nostra strategia aziendale:
+                  diamo priorità alle esigenze e ai valori dei nostri clienti,
+                  ponendoli al centro di tutte le nostre decisioni."</b></cite>
+              <p>- Adina Bădulescu, CEO & Business Analyst</p>
+            </div>
+          </div>
+
+          <div class="col-2-3">
+            <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+              <div class="icon">
+                <i class="fa fa-html5 fa-2x"></i>
+              </div>
+              <div class="icon-block-description">
+                <h4>HTML5 &amp; CSS3</h4>
+                <p>
+                  I nostri siti web sono progettati per essere facili da
+                  mantenere in conformità con il principio
+                  <b>K.I.S.S.</b> (Keep it stupid simple) della
+                  programmazione.
+                </p>
+              </div>
+            </div>
+            <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="fa fa-bolt fa-2x"></i>
+              </div>
+              <div class="icon-block-description">
+                <h4>Semplice da utilizzare</h4>
+                <p>
+                  I nostri siti web sono progettati secondo il principio UI/UX
+                  del <b>User-centered</b> design, che pone l'accento sui
+                  bisogni, sugli obiettivi e sui modelli mentali dell'utente
+                  durante il processo di sviluppo di un sito web/applicazione,
+                  garantendo che l'interfaccia sia intuitiva ed efficiente.
+                </p>
+              </div>
+            </div>
+            <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon">
+                <i class="fa fa-tablet fa-2x"></i>
+              </div>
+              <div class="icon-block-description">
+                <h4>Completamente reattivo</h4>
+                <p>
+                  I nostri siti web sono sviluppati seguendo la filosofia di
+                  design <b>Mobile-First</b>, che dà priorità alla creazione
+                  di siti web pensando prima ai dispositivi mobili
+                </p>
+              </div>
+            </div>
+            <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+              <div class="icon">
+                <i class="fa fa-rocket fa-2x"></i>
+              </div>
+              <div class="icon-block-description">
+                <h4>Proposta di Valore Unica</h4>
+                <p>
+                  I nostri progetti possono utilizzare stack tecnologici di
+                  livello industriale come ASP.NET CORE, Angular, SQL Server,
+                  per i quali siamo in grado di offrire
+                  supporto continuo. Richiedi un incontro di consulenza su
+                  questo argomento.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </header>
-
-      <main id="content">
-        <section
-          id="pricing"
-          class="secondary-color text-center scrollto clearfix"
-        >
-          <div class="row clearfix">
+      </section>
+      <div id="services" class="scrollto clearfix">
+        <div class="row no-padding-bottom clearfix">
+          <div class="col-3">
+            <blockquote class="testimonial text-right bigtest">
+              <q>Programmatore: una macchina che trasforma il caffè in
+                codice.</q>
+              <footer>— Anonimo</footer>
+            </blockquote>
+          </div>
+          <div class="col-3">
             <div class="section-heading">
-              <h3>LA TUA SCELTA</h3>
-              <h2 class="section-title">Abbiamo il pacchetto giusto per te</h2>
+              <h3>IMPACTO</h3>
+              <h2 class="section-title">
+                Concentrati sulle tue seguenti esigenze
+              </h2>
+              <p class="section-subtitle"></p>
             </div>
-
-            <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
-              <div class="pricing-block-content">
-                <h3>Sito Vetrina Start</h3>
-                <p class="pricing-sub">Pacchetto Base</p>
-                <div class="pricing">
-                  <div class="price"><span>&#8364;</span>300</div>
-                  <p>Pagina Singola (Scroll)</p>
-                </div>
-                <ul>
-                  <li>Design Moderno</li>
-                  <li>Ottimizzazione Mobile (Responsive)</li>
-                  <li>Modulo di Contatto</li>
-                  <li>Consegna in 48–72h</li>
-                  <li>Hosting → 100€/anno</li>
-                </ul>
-                <a
-                  href="#contact-form-modal"
-                  data-featherlight="#contact-form-modal"
-                  class="button order-btn"
-                  data-package="Sito Vetrina Start"
-                  >ORDINA OGGI</a
-                >
-              </div>
-            </div>
-            <div
-              class="pricing-block featured col-3 wow fadeInUp"
-              data-wow-delay="0.6s"
-            >
-              <div class="pricing-block-content">
-                <h3>Sito Vetrina Pro</h3>
-                <p class="pricing-sub">La scelta più popolare</p>
-                <div class="pricing">
-                  <div class="price"><span>&#8364;</span>500 -</div>
-                  <div class="price"><span>&#8364;</span>700</div>
-                  <p>4–6 Pagine</p>
-                </div>
-                <ul>
-                  <li>Ottimizzazione Mobile (Responsive)</li>
-                  <li>SEO On-Page</li>
-                  <li>Configurazione Google Business Profile</li>
-                  <li>Ottimizzazione della Velocità</li>
-                  <li>Hosting + Manutenzione → 150€/anno</li>
-                </ul>
-                <a
-                  href="#contact-form-modal"
-                  data-featherlight="#contact-form-modal"
-                  class="button order-btn"
-                  data-package="Sito Vetrina Pro"
-                  >ORDINA OGGI</a
-                >
-              </div>
-            </div>
-            <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
-              <div class="pricing-block-content">
-                <h3>Brand & Web</h3>
-                <p class="pricing-sub">Pacchetto Premium</p>
-                <div class="pricing">
-                  <div class="price"><span>&#8364;</span>900 -</div>
-                  <div class="price"><span>&#8364;</span>1200</div>
-                  <p>4–10 Pagine</p>
-                </div>
-                <ul>
-                  <li>Design Personalizzato</li>
-                  <li>Copywriting Professionale</li>
-                  <li>Logo + Identità Visiva</li>
-                  <li>Assistenza 30 Giorni</li>
-                  <li>Hosting + Manutenzione → 150€/anno</li>
-                </ul>
-                <a
-                  href="#contact-form-modal"
-                  data-featherlight="#contact-form-modal"
-                  class="button order-btn"
-                  data-package="Brand & Web"
-                  >ORDINA OGGI</a
-                >
-              </div>
-            </div>
+            <p>Software Personalizzato</p>
+            <p>ERP</p>
+            <p>Siti web di presentazione</p>
+            <p>Consulenza</p>
+            <p>Manutenzione del sito web</p>
+            <p>Campagne Google ADS* (<small>configurazione iniziale <span>&#8364;</span>80</small>)</p>
+            <p>Ottimizzazione SEO</p>
           </div>
-        </section>
-        <section id="about" class="introduction scrollto">
-          <div class="row clearfix">
-            <div class="col-3">
-              <div class="section-heading">
-                <h3>SINERGIA</h3>
-                <h2 class="section-title">
-                  La tua attività merita un sito web che porti risultati
-                </h2>
-                <cite class="section-subtitle"
-                  ><b
-                    >"Il cliente è al centro della nostra strategia aziendale:
-                    diamo priorità alle esigenze e ai valori dei nostri clienti,
-                    ponendoli al centro di tutte le nostre decisioni."</b
-                  ></cite
-                >
-                <p>- Adina Bădulescu, CEO & Business Analyst</p>
-              </div>
-            </div>
-
-            <div class="col-2-3">
-              <div
-                class="col-2 icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.1s"
-              >
-                <div class="icon">
-                  <i class="fa fa-html5 fa-2x"></i>
-                </div>
-                <div class="icon-block-description">
-                  <h4>HTML5 &amp; CSS3</h4>
-                  <p>
-                    I nostri siti web sono progettati per essere facili da
-                    mantenere in conformità con il principio
-                    <b>K.I.S.S.</b> (Keep it stupid simple) della
-                    programmazione.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-2 icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <div class="icon">
-                  <i class="fa fa-bolt fa-2x"></i>
-                </div>
-                <div class="icon-block-description">
-                  <h4>Semplice da utilizzare</h4>
-                  <p>
-                    I nostri siti web sono progettati secondo il principio UI/UX
-                    del <b>User-centered</b> design, che pone l'accento sui
-                    bisogni, sugli obiettivi e sui modelli mentali dell'utente
-                    durante il processo di sviluppo di un sito web/applicazione,
-                    garantendo che l'interfaccia sia intuitiva ed efficiente.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-2 icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.5s"
-              >
-                <div class="icon">
-                  <i class="fa fa-tablet fa-2x"></i>
-                </div>
-                <div class="icon-block-description">
-                  <h4>Completamente reattivo</h4>
-                  <p>
-                    I nostri siti web sono sviluppati seguendo la filosofia di
-                    design <b>Mobile-First</b>, che dà priorità alla creazione
-                    di siti web pensando prima ai dispositivi mobili
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-2 icon-block icon-top wow fadeInUp"
-                data-wow-delay="0.5s"
-              >
-                <div class="icon">
-                  <i class="fa fa-rocket fa-2x"></i>
-                </div>
-                <div class="icon-block-description">
-                  <h4>Proposta di Valore Unica</h4>
-                  <p>
-                    I nostri progetti possono utilizzare stack tecnologici di
-                    livello industriale come ASP.NET CORE, Angular, SQL Server,
-                    per i quali siamo in grado di offrire
-                    supporto continuo. Richiedi un incontro di consulenza su
-                    questo argomento.
-                  </p>
-                </div>
-              </div>
-            </div>
+          <div class="col-3">
+            <img src="images/gallery-images/starfish.jpg" alt="Dancer" />
           </div>
-        </section>
-        <div id="services" class="scrollto clearfix">
-          <div class="row no-padding-bottom clearfix">
-            <div class="col-3">
-              <blockquote class="testimonial text-right bigtest">
-                <q
-                  >Programmatore: una macchina che trasforma il caffè in
-                  codice.</q
-                >
-                <footer>— Anonimo</footer>
-              </blockquote>
-            </div>
-            <div class="col-3">
-              <div class="section-heading">
-                <h3>IMPACTO</h3>
-                <h2 class="section-title">
-                  Concentrati sulle tue seguenti esigenze
-                </h2>
-                <p class="section-subtitle"></p>
-              </div>
-              <p>Software Personalizzato</p>
-              <p>ERP</p>
-              <p>Siti web di presentazione</p>
-              <p>Consulenza</p>
-              <p>Manutenzione del sito web</p>
-              <p>Campagne Google ADS* (<small>configurazione iniziale <span>&#8364;</span>80</small>)</p>
-              <p>Ottimizzazione SEO</p>
-            </div>
-            <div class="col-3">
-              <img src="images/gallery-images/starfish.jpg" alt="Dancer" />
-            </div>
-          </div>
-        </div>
-
-      </main>
-      <div class="lightbox-content" id="contact-form-modal">
-        <div class="container">
-          <h3>Contattaci per un preventivo</h3>
-          <p>Inviaci i tuoi dettagli e ti risponderemo entro 24 ore.</p>
-          <form id="modal-contact-form">
-            <div class="form-group">
-              <input
-                type="text"
-                name="name"
-                placeholder="Nome completo"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Email" required />
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                name="phone"
-                placeholder="Numero di telefono (Opzionale)"
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                name="message"
-                placeholder="Il tuo messaggio o la tua idea per il sito"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="button">Invia Messaggio</button>
-          </form>
         </div>
       </div>
-      <footer id="landing-footer" class="clearfix">
-        <div class="row clearfix">          
-          <p id="copyright" class="col-5">P.IVA: 03047270990</p>
-          <p id="copyright" class="col-5">
-            <a href="tel:+393532132636">353 213 2636</a>
-          </p>
-          <p id="copyright" class="col-5">
-            <a href="mailto:ciao@officinasiti.it">ciao@officinasiti.it</a>
-          </p>
-        </div>
-      </footer>
+
+    </main>
+    <div class="lightbox-content" id="contact-form-modal">
+      <div class="container">
+        <h3>Contattaci per un preventivo</h3>
+        <p>Inviaci i tuoi dettagli e ti risponderemo entro 24 ore.</p>
+        <form id="modal-contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Nome completo" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <input type="text" name="phone" placeholder="Numero di telefono (Opzionale)" />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Il tuo messaggio o la tua idea per il sito" required></textarea>
+          </div>
+          <button type="submit" class="button">Invia Messaggio</button>
+        </form>
+      </div>
     </div>
-    <script src="js/jquery.1.8.3.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/featherlight.min.js"></script>
-    <script src="js/featherlight.gallery.min.js"></script>
-    <script src="js/jquery.enllax.min.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.stickyNavbar.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/images-loaded.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/site.js"></script>
-    <script src="js/modal-form.js"></script>
-  </body>
+    <footer id="landing-footer" class="clearfix">
+      <div class="row clearfix">
+        <p id="copyright" class="col-5">P.IVA: 03047270990</p>
+        <p id="copyright" class="col-5">
+          <a href="tel:+393532132636">353 213 2636</a>
+        </p>
+        <p id="copyright" class="col-5">
+          <a href="mailto:ciao@officinasiti.it">ciao@officinasiti.it</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script src="js/jquery.1.8.3.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/featherlight.min.js"></script>
+  <script src="js/featherlight.gallery.min.js"></script>
+  <script src="js/jquery.enllax.min.js"></script>
+  <script src="js/jquery.scrollUp.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.stickyNavbar.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/images-loaded.min.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="js/site.js"></script>
+  <script src="js/modal-form.js"></script>
+</body>
+
 </html>
