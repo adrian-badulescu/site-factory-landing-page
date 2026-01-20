@@ -32,7 +32,7 @@
             message;
 
           var encodedMessage = encodeURIComponent(whatsappMessage);
-          var whatsappURL = "https://wa.me/393932124997?text=" + encodedMessage;
+          var whatsappURL = "https://wa.me/393532132636?text=" + encodedMessage;
 
           window.open(whatsappURL, "_blank");
 

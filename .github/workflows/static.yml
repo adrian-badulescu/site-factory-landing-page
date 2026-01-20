@@ -1,22 +1,23 @@
-name: Deploy static site to OVH Web Cloud
+name: Deploy to OVH Web Cloud via FTP
 
 on:
   push:
     branches: ["main"]
 
 jobs:
-  deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Deploy to OVH Web Hosting
-        uses: guitdev/OVHcloud-deploy-hosting-action@v1
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          ssh_host: ${{ secrets.OVH_HOST }}
-          ssh_user: ${{ secrets.OVH_USER }}
-          ssh_key: ${{ secrets.OVH_KEY }}
-          local_path: "."
-          remote_path: ${{ secrets.OVH_PATH }}
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: "./public"
+          server-dir: "/www/"
+
