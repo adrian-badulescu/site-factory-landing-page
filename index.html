@@ -86,6 +86,39 @@
       color: #888;
       margin-bottom: 20px;
     }
+
+    /* Ascundem break-ul pe desktop */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Afișăm break-ul doar pe mobil ca să rupem cuvântul lung */
+  .mobile-only {
+    display: block;
+  }
+
+  #banner-content h1 {
+    /* 8vw înseamnă că fontul se va micșora automat în funcție de lățimea ecranului */
+    font-size: 8vw !important; 
+    line-height: 1.1 !important;
+    word-wrap: break-word;
+    display: block;
+    width: 100%;
+  }
+
+  .banner-subtitle {
+    font-size: 4.5vw !important; /* Și subtitlul devine elastic */
+    line-height: 1.3;
+  }
+
+  /* Eliminăm orice padding lateral care ar putea împinge textul */
+  .col-38 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: 100% !important;
+  }
+}
   </style>
 </head>
 
@@ -131,7 +164,9 @@
         <div class="col-38">
           <div class="section-heading">
             <h1>
-              Realizzazione Siti Web a <span style="color: #009246;">GE</span>NO<span style="color: #ce2b37;">VA</span>, Professionali e Veloci in 72 Ore. Semplice e senza
+              Realizzazione <br class="mobile-only">
+              Siti Web a <span style="color: #009246;">GE</span>NO<span style="color: #ce2b37;">VA</span>
+              , Professionali e Veloci in 72 Ore. Semplice e senza
               stress.
             </h1>
             <h2>Soluzioni digitali per il tuo business: dal sito vetrina al brand identity.</h2>
