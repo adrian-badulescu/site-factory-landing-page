@@ -2,6 +2,15 @@
 <html>
 
 <head lang="en">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11351250292"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11351250292');
+  </script>
   <meta charset="UTF-8" />
 
   <title>Realizzazione Siti Web in 72 Ore | OfficinaSiti.it</title>
@@ -88,37 +97,39 @@
     }
 
     /* Ascundem break-ul pe desktop */
-.mobile-only {
-  display: none;
-}
+    .mobile-only {
+      display: none;
+    }
 
-@media (max-width: 768px) {
-  /* Afișăm break-ul doar pe mobil ca să rupem cuvântul lung */
-  .mobile-only {
-    display: block;
-  }
+    @media (max-width: 768px) {
 
-  #banner-content h1 {
-    /* 8vw înseamnă că fontul se va micșora automat în funcție de lățimea ecranului */
-    font-size: 8vw !important; 
-    line-height: 1.1 !important;
-    word-wrap: break-word;
-    display: block;
-    width: 100%;
-  }
+      /* Afișăm break-ul doar pe mobil ca să rupem cuvântul lung */
+      .mobile-only {
+        display: block;
+      }
 
-  .banner-subtitle {
-    font-size: 4.5vw !important; /* Și subtitlul devine elastic */
-    line-height: 1.3;
-  }
+      #banner-content h1 {
+        /* 8vw înseamnă că fontul se va micșora automat în funcție de lățimea ecranului */
+        font-size: 8vw !important;
+        line-height: 1.1 !important;
+        word-wrap: break-word;
+        display: block;
+        width: 100%;
+      }
 
-  /* Eliminăm orice padding lateral care ar putea împinge textul */
-  .col-38 {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    width: 100% !important;
-  }
-}
+      .banner-subtitle {
+        font-size: 4.5vw !important;
+        /* Și subtitlul devine elastic */
+        line-height: 1.3;
+      }
+
+      /* Eliminăm orice padding lateral care ar putea împinge textul */
+      .col-38 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        width: 100% !important;
+      }
+    }
   </style>
 </head>
 
