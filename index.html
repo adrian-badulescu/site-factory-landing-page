@@ -2,15 +2,6 @@
 <html>
 
 <head lang="en">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11351250292"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-11351250292');
-  </script>
   <meta charset="UTF-8" />
 
   <title>Realizzazione Siti Web in 72 Ore | OfficinaSiti.it</title>
@@ -131,6 +122,29 @@
       }
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11351250292"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11351250292');
+  </script>
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11351250292/rp8XCJm32f4bEPSq2aQq',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
 </head>
 
 <body>
@@ -234,7 +248,8 @@
                 <li>Hosting → 100€/anno</li>
               </ul>
               <a href="#contact-form-modal" data-featherlight="#contact-form-modal" class="button order-btn"
-                data-package="Sito Vetrina Start">ORDINA OGGI</a>
+                data-package="Sito Vetrina Start"
+                onclick="gtag('event', 'click_pachet_start', {'event_category': 'butoane_pret'});">ORDINA OGGI</a>
             </div>
           </div>
           <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
@@ -254,7 +269,8 @@
                 <li>Hosting + Manutenzione → 150€/anno</li>
               </ul>
               <a href="#contact-form-modal" data-featherlight="#contact-form-modal" class="button order-btn"
-                data-package="Sito Vetrina Pro">ORDINA OGGI</a>
+                data-package="Sito Vetrina Pro"
+                onclick="gtag('event', 'click_pachet_pro', {'event_category': 'butoane_pret'});">ORDINA OGGI</a>
             </div>
           </div>
           <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
@@ -274,7 +290,8 @@
                 <li>Hosting + Manutenzione → 150€/anno</li>
               </ul>
               <a href="#contact-form-modal" data-featherlight="#contact-form-modal" class="button order-btn"
-                data-package="Brand & Web">ORDINA OGGI</a>
+                data-package="Brand & Web"
+                onclick="gtag('event', 'click_pachet_brand_web', {'event_category': 'butoane_pret'});">ORDINA OGGI</a>
             </div>
           </div>
         </div>

@@ -35,7 +35,7 @@
           var whatsappURL = "https://wa.me/393532132636?text=" + encodedMessage;
 
           window.open(whatsappURL, "_blank");
-
+          gtag_report_conversion();
           $.featherlight.close();
           this.reset();
         });
